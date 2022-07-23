@@ -26,7 +26,7 @@ class Review(models.Model):
         ('up', 'up Vote'),
         ('down', 'Down Vote'),
     )
-    # owner =
+    # owner = todo
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
     body = models.TextField(null=True, blank=True)
     value = models.CharField(max_length=200, choices=VOTE_TYPE)
